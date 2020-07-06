@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgprofile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/profile"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Utilisateur de l'application"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:layout_below="@id/imgprofile"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/txtresum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Résumé"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_below="@id/txt1"
+        android:layout_alignLeft="@id/txt1" />
+    <TextView
+        android:id="@+id/txtnbr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_below="@id/txt1"
+        android:layout_alignRight="@id/txt1" />
+    <TextView
+        android:id="@+id/rdv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rendez-vous"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@id/txtresum"
+        android:layout_alignLeft="@id/txtresum" />
+    <TextView
+        android:id="@+id/suiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivis"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@id/rdv"
+        android:layout_alignLeft="@id/rdv"/>
+    <TextView
+        android:id="@+id/notif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@id/suiv"
+        android:layout_alignLeft="@id/suiv"/>
+    <RadioGroup
+        android:id="@+id/rdgrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notif">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rendez vous"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Urgence"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suivi"/>
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@id/txtnbr"
+        android:layout_alignRight="@id/txtnbr" />
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@id/t1"
+        android:layout_alignRight="@id/txtnbr" />
+    <TextView
+        android:id="@+id/t7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@id/t2"
+        android:layout_alignRight="@id/txtnbr" />
+    <ImageView
+        android:id="@+id/imgand"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/brand"
+        android:layout_below="@id/t7"
+        android:layout_alignRight="@id/t7"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Annuler"
+        android:layout_below="@id/imgand"
+        android:layout_alignLeft="@id/imgand"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoyer"
+        android:layout_below="@id/imgand"
+        android:layout_alignRight="@id/imgand"/>
+
+
+</RelativeLayout>
